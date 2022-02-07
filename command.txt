@@ -1,0 +1,4 @@
+UiRobot.exe -f Main.xaml
+
+Cek Loging data
+%LocalAppData%\UiPath\Logs
