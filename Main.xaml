@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1210,38326" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1210,38528" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="80">
       <x:String>System.Activities</x:String>
@@ -91,7 +91,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="MULAI" sap:VirtualizedContainerService.HintSize="1220,38261" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="MULAI" sap:VirtualizedContainerService.HintSize="1220,38463" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="tblLogin" />
       <Variable x:TypeArguments="sd:DataTable" Name="tblData" />
@@ -104,7 +104,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch Proses Baca Data Excel" sap:VirtualizedContainerService.HintSize="1178,38169" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch Proses Baca Data Excel" sap:VirtualizedContainerService.HintSize="1178,38371" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
         <Sequence DisplayName="Sequence &quot;Baca Data Excel&quot;" sap:VirtualizedContainerService.HintSize="376,810" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <sap:WorkflowViewStateService.ViewState>
@@ -145,15 +145,15 @@
         </Catch>
       </TryCatch.Catches>
       <TryCatch.Finally>
-        <Sequence DisplayName="Sequence Mulai" sap:VirtualizedContainerService.HintSize="1140,36956" sap2010:WorkflowViewState.IdRef="Sequence_57">
+        <Sequence DisplayName="Sequence Mulai" sap:VirtualizedContainerService.HintSize="1140,37158" sap2010:WorkflowViewState.IdRef="Sequence_57">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1098,36864" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1098,37066" sap2010:WorkflowViewState.IdRef="TryCatch_2">
             <TryCatch.Try>
-              <Sequence DisplayName="Mulai Proses" sap:VirtualizedContainerService.HintSize="1060,36269" sap2010:WorkflowViewState.IdRef="Sequence_56">
+              <Sequence DisplayName="Mulai Proses" sap:VirtualizedContainerService.HintSize="1060,36471" sap2010:WorkflowViewState.IdRef="Sequence_56">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -163,26 +163,26 @@
                 <WriteLine DisplayName="Write Line Data Login" sap:VirtualizedContainerService.HintSize="1018,61" sap2010:WorkflowViewState.IdRef="WriteLine_106" Text="[&quot;ParamLogin : &quot;+CStr(tblLogin.RowCount)]" />
                 <WriteLine DisplayName="Write Line Login Validasi" sap:VirtualizedContainerService.HintSize="1018,61" sap2010:WorkflowViewState.IdRef="WriteLine_107" Text="[&quot;Validasi Data Login: &quot;+CStr(tblData.RowCount)]" />
                 <ui:MessageBox ChosenButton="{x:Null}" AutoCloseAfter="00:00:03" Buttons="Ok" Caption="Cek Data Excel" DisplayName="Message Box &quot;Mulai&quot;" sap:VirtualizedContainerService.HintSize="1018,84" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;Data Terbaca - Total &quot;+CStr(tblData.RowCount)]" />
-                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tblLogin]" DisplayName="For Each Row in tblLogin" sap:VirtualizedContainerService.HintSize="1018,35750" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tblLogin]" DisplayName="For Each Row in tblLogin" sap:VirtualizedContainerService.HintSize="1018,35952" sap2010:WorkflowViewState.IdRef="ForEachRow_4">
                   <ui:ForEachRow.Body>
                     <ActivityAction x:TypeArguments="sd:DataRow">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentLogin" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Login Buka Browser" sap:VirtualizedContainerService.HintSize="984,35630" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                      <Sequence DisplayName="Login Buka Browser" sap:VirtualizedContainerService.HintSize="984,35832" sap2010:WorkflowViewState.IdRef="Sequence_55">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="942,61" sap2010:WorkflowViewState.IdRef="WriteLine_108" Text="Sipakan Browser ke Alamat FMIS" />
-                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: SIMDA-NG | Pemerintah Kabupaten Hulu Sungai Tengah" sap:VirtualizedContainerService.HintSize="942,35437" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="fea5aeae-4298-4099-a2bd-3a9cd0c60b64" Version="V1">
+                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: SIMDA-NG | Pemerintah Kabupaten Hulu Sungai Tengah" sap:VirtualizedContainerService.HintSize="942,35639" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="fea5aeae-4298-4099-a2bd-3a9cd0c60b64" Version="V1">
                           <uix:NApplicationCard.Body>
                             <ActivityAction x:TypeArguments="x:Object">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Mulai Input Data Renja" sap:VirtualizedContainerService.HintSize="908,35221" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                              <Sequence DisplayName="Mulai Input Data Renja" sap:VirtualizedContainerService.HintSize="908,35423" sap2010:WorkflowViewState.IdRef="Sequence_54">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:Int32" Default="0" Modifiers="Mapped" Name="pNo_Rinc" />
                                   <Variable x:TypeArguments="x:Int32" Default="0" Name="pNo_Aktivitas" />
@@ -366,13 +366,13 @@
                                     </uix:VerifyExecutionOptions>
                                   </uix:NClick.VerifyOptions>
                                 </uix:NClick>
-                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tblData]" DisplayName="For Each Row in tblData" sap:VirtualizedContainerService.HintSize="866,32140" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tblData]" DisplayName="For Each Row in tblData" sap:VirtualizedContainerService.HintSize="866,32342" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
                                   <ui:ForEachRow.Body>
                                     <ActivityAction x:TypeArguments="sd:DataRow">
                                       <ActivityAction.Argument>
                                         <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentData" />
                                       </ActivityAction.Argument>
-                                      <Sequence DisplayName="Proses Input Data" sap:VirtualizedContainerService.HintSize="832,32019" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                                      <Sequence DisplayName="Proses Input Data" sap:VirtualizedContainerService.HintSize="832,32221" sap2010:WorkflowViewState.IdRef="Sequence_53">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="x:String" Default="[CurrentData(&quot;no_renja&quot;).ToString]" Modifiers="Mapped" Name="pNo_Renja" />
                                           <Variable x:TypeArguments="x:String" Default="[CurrentData(&quot;program&quot;).ToString]" Modifiers="Mapped" Name="pNama_Program" />
@@ -401,12 +401,12 @@
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:IfElseIf DisplayName="Else If Cek Job Status" sap:VirtualizedContainerService.HintSize="790,31723" sap2010:WorkflowViewState.IdRef="IfElseIf_14">
+                                        <ui:IfElseIf DisplayName="Else If Cek Job Status" sap:VirtualizedContainerService.HintSize="790,31925" sap2010:WorkflowViewState.IdRef="IfElseIf_14">
                                           <ui:IfElseIf.ConditionBlocks>
                                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                               <ui:IfElseIfBlock BlockType="If" Condition="[CurrentData(&quot;job_status&quot;).ToString = &quot;&quot;]">
                                                 <ui:IfElseIfBlock.Then>
-                                                  <Sequence DisplayName="Body Belum di Input" sap:VirtualizedContainerService.HintSize="739,31345" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                                                  <Sequence DisplayName="Body Belum di Input" sap:VirtualizedContainerService.HintSize="739,31547" sap2010:WorkflowViewState.IdRef="Sequence_51">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1102,18 +1102,18 @@
                                                       </ui:IfElseIf.ConditionBlocks>
                                                     </ui:IfElseIf>
                                                     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="697,61" sap2010:WorkflowViewState.IdRef="WriteLine_198" Text="[IF(pCek_Aktivitas.ToString = &quot;0&quot;, &quot;Aktivitas Tdk Ditemukan&quot;, &quot;Aktivitas Ditemukan Dengan No = &quot; + pCek_Aktivitas.ToString)]" />
-                                                    <ui:IfElseIf DisplayName="Else If Proses Tahap 2" sap:VirtualizedContainerService.HintSize="697,7961" sap2010:WorkflowViewState.IdRef="IfElseIf_12">
+                                                    <ui:IfElseIf DisplayName="Else If Proses Tahap 2" sap:VirtualizedContainerService.HintSize="697,8163" sap2010:WorkflowViewState.IdRef="IfElseIf_12">
                                                       <ui:IfElseIf.ConditionBlocks>
                                                         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                           <ui:IfElseIfBlock BlockType="If" Condition="[CurrentData(&quot;no_rinc&quot;).ToString = &quot;1&quot; AND pCek_Aktivitas.ToString = &quot;0&quot;]">
                                                             <ui:IfElseIfBlock.Then>
-                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="418,5540" sap2010:WorkflowViewState.IdRef="Sequence_41">
+                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="418,5641" sap2010:WorkflowViewState.IdRef="Sequence_41">
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                <Sequence DisplayName="Sequence Proses 2" sap:VirtualizedContainerService.HintSize="376,5448" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                                                                <Sequence DisplayName="Sequence Proses 2" sap:VirtualizedContainerService.HintSize="376,5549" sap2010:WorkflowViewState.IdRef="Sequence_40">
                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1439,12 +1439,13 @@
                                                                     </uix:NSelectItem.Target>
                                                                   </uix:NSelectItem>
                                                                   <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_143" Text="[&quot;No Aktivitas = &quot; + pNum_Aktivitas]" />
-                                                                  <uix:NHighlight Color="Green" ContinueOnError="True" DelayBefore="2" DisplayName="Highlight 'No Aktivitas'" HighlightTime="2" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NHighlight_3" ScopeIdentifier="fea5aeae-4298-4099-a2bd-3a9cd0c60b64" Version="V1">
+                                                                  <uix:NHighlight Color="Green" ContinueOnError="True" DelayBefore="2" DisplayName="Highlight 'No Aktivitas'" HighlightTime="2" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NHighlight_3" ScopeIdentifier="fea5aeae-4298-4099-a2bd-3a9cd0c60b64" Timeout="30" Version="V1">
                                                                     <uix:NHighlight.Target>
                                                                       <uix:TargetAnchorable BrowserURL="https://fmis.bpkp.go.id/s2/hulusungaitengahkab/perencanaan-tahunan/renja-murni" DesignTimeRectangle="422, 536, 135, 37" ElementType="Text" FriendlyName="'10'" FullSelectorArgument="[String.Format(&quot;&lt;webctrl aria-role='grid' id='table-aktivitas' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tag='TD' colName='No' innertext='{0}' tableCol='3' /&gt;&quot;, pNum_Aktivitas)]" FuzzySelectorArgument="[String.Format(&quot;&lt;webctrl aria-role='grid' id='table-aktivitas' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tag='TD' type='' aaname='{0}' check:text='{0}' /&gt;&quot;, pNum_Aktivitas)]" Guid="055c926c-551f-4b15-8496-f6bf22f53bc2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGYAAAApCAYAAADH0VzbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEjSURBVHhe7duhasNQGIbh3MjuYGJ3sZnZqTG5mdiKEZPKikwX5iq6ykLh2KnawlpTPQqFksFgomQMvqYsItSXfqe8D/yQk8iXkxOT5OLyRozfJJvvrRi/IYzpJIIlwpgijCnCmCKMKcKYIowpwpgijCnCmCKMKcKYIowpwpiKN0y11kfoK+0Glc2tvWo+0MPtk66uU6XDharmfmwiDbNWeOlpMB0r77TDLPV631P4qi//PjXqZBqt/p/EJvJX2UxFO8zPu55b69UkUzFvFpE5rzCboLS1LkNOmNNgx5g6CLM/Y+7y+lz55Yw5rcMw9VfZ8k2PfJXhWAhjijCmCGOKMKYIY4owpghjijCmCGOKMKYIY4owpghjijCm+DnWdNgxlqQdjxjD0gTRhyYAAAAASUVORK5CYII=" InformativeScreenshot="f2329499a2849c07c43c4ab41eaa6388.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SIMDA-NG | Pemerintah Kabupaten Hulu Sungai Tengah' /&gt;" SearchSteps="Selector" WaitForReadyArgument="Interactive" />
                                                                     </uix:NHighlight.Target>
                                                                   </uix:NHighlight>
-                                                                  <uix:NClick ClickType="Double" DelayBefore="3" DisplayName="Double-click 'No Aktivitas'" sap:VirtualizedContainerService.HintSize="334,193" sap2010:WorkflowViewState.IdRef="NClick_194" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fea5aeae-4298-4099-a2bd-3a9cd0c60b64" Timeout="60">
+                                                                  <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_215" Text="Loading . . ." />
+                                                                  <uix:NClick ClickType="Double" DelayBefore="3" DisplayName="Double-click 'No Aktivitas'" sap:VirtualizedContainerService.HintSize="334,193" sap2010:WorkflowViewState.IdRef="NClick_194" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fea5aeae-4298-4099-a2bd-3a9cd0c60b64" Timeout="30">
                                                                     <uix:NClick.Target>
                                                                       <uix:TargetAnchorable BrowserURL="https://fmis.bpkp.go.id/s2/hulusungaitengahkab/perencanaan-tahunan/renja-murni" DesignTimeRectangle="422, 499, 135, 37" ElementType="Text" FriendlyName="'# Fungsional Umum'" FullSelectorArgument="[String.Format(&quot;&lt;webctrl aria-role='grid' id='table-aktivitas' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tag='TD' innertext='{0}' tableCol='3' /&gt;&quot;, pNum_Aktivitas)]" FuzzySelectorArgument="&lt;webctrl aria-role='grid' id='table-aktivitas' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tag='TD' aaname='14' colName='No' parentid='table-aktivitas' type='' check:text='14' /&gt;" Guid="0f93074b-4977-4bbd-b2b7-75db7ac98ada" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAh4AAAApCAYAAAB6IyB2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQFSURBVHhe7drPaxNpAMbx/iP7H+zBW0/di4cuiIdFkB6khwXbHubSQqBBkBQKVZYGpEILUlhysB66VFgYUAIB3T0EodCKNCBd2BIoxBzSikpK4Nn3nXmnmYaYH7J90fj9wEMmb96ZSU7vw5sZ++HHn0UIIYQQ4iNjtcYnEUIIIYT4CMWDEEIIId4yJgAAAE8oHgAAwBuKBwAA8IbiAQAAvKF4AAAAbygeAADAG4oHAADwhuIBAAC8oXgAAABvKB4AAMAbigcAAPCG4gEAALyheAAAAG8oHon9DQXhsXsDAAAuw8DFo/rnmnbMupy8XmAW7Ss/zaayoT330eV4p/DuvAr/uLf/h27Fw/6u9V33xqiFCjKh6u4tAAAYzoDF40wvH2yaMpG8duhcoL9FFA8AAC5d/+JhF9sLuxkmnYtv1+JxrJ1Me+djb31Wq/v2yI7nlMtnNGGuNbGwrYNmNEXVUl5Tk+b613PKLs7H85uH2lkKNG7nzq2p6LrB3npOO7X4uL5b0Mx1+90CzfxeVr1lR3e1evu+covxuVO/leLv3DpW0d17/EZOhbdndnTo4lEPcwrutb9vIdxScMMcTwbKPnPXSV9z2HMBABhBg+14NJ5r9Y/D9msnu0DbQpIkWqx7FY87evTmxBx/0Mu8G2/+pZWbGyq/N8etExXvufE3m7q2vK296onq+6Ee/X1kBlPFo1nWyq32eeWH81p5ZcuEKR6T9xXWzHHrUE/m3PzGocqVd+bAeLulqaRYfEnxeBp/l9MXeVPGnqpqC8/7knJJMetVPPqdCwDACOpbPGxhuFAqTPou0JFexaM9bhfhaNwuzKlrnM83ZeKguKnsQkZX7Q5F5YP73BWJjvPai70pHqlF/Hz+x9cq3JmPdjzaJcn4guIR/x7jwrzUfdPXHPZcAABG0EA7Hj0fLLU6F+hI/JdKND+9g/G54tGxc5HMr79YUzaMdwdUKegXd5/zImF3CT6349GleNSfLWv6cUX2351mpc+OR3Vb08m1dWZ+/7ImHpSjcwctHtcexvOje1E8AADfuYGKR3m9x4OlVtfiYUtD8hxDRtnFTO/iYaSf8ZiZc0XF7lC45zTGf80P94xHl+KhRlmrc0E0d3ppWVNLJZ3aCd2Kh1EtrWk6uvasri5u6eBjPD5QeWhWVFiw9zLnmnux4wEA+N4N9oyHJ/V/j3RqS0PrSE/sbokrFgAAYDR8RcXjTNWi212YDBQ8fh39RQEAAEbHV7XjAQAARhvFAwAAeEPxAAAA3lA8AACANxQPAADgDcUDAAB4Q/EAAADeUDwAAIA3FA8AAOANxQMAAHhD8QAAAN5QPAAAgDcUDwAA4M1YrfFJhBBCCCE+wo4HAADwRPoPwrRIWnFgsq0AAAAASUVORK5CYII=" InformativeScreenshot="208932c7b6d1e64bd5a04ce9bdec592e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SIMDA-NG | Pemerintah Kabupaten Hulu Sungai Tengah' /&gt;" SearchSteps="Selector" WaitForReadyArgument="Interactive" />
                                                                     </uix:NClick.Target>
@@ -1471,18 +1472,18 @@
                                                           </ui:IfElseIfBlock>
                                                           <ui:IfElseIfBlock BlockType="Else">
                                                             <ui:IfElseIfBlock.Then>
-                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="493,2196" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                                                              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="493,2297" sap2010:WorkflowViewState.IdRef="Sequence_43">
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                <ui:IfElseIf DisplayName="Else If Resume Job Rincian Aktivitas" sap:VirtualizedContainerService.HintSize="451,1669" sap2010:WorkflowViewState.IdRef="IfElseIf_11">
+                                                                <ui:IfElseIf DisplayName="Else If Resume Job Rincian Aktivitas" sap:VirtualizedContainerService.HintSize="451,1770" sap2010:WorkflowViewState.IdRef="IfElseIf_11">
                                                                   <ui:IfElseIf.ConditionBlocks>
                                                                     <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                                                       <ui:IfElseIfBlock BlockType="If" Condition="[pJob_Resume = &quot;YA&quot; AND (CurrentData(&quot;no_rinc&quot;).ToString &lt;&gt; &quot;1&quot; OR pCek_Aktivitas.ToString &lt;&gt; &quot;0&quot;)]">
                                                                         <ui:IfElseIfBlock.Then>
-                                                                          <Sequence DisplayName="Body Resume Rincian Aktivitas" sap:VirtualizedContainerService.HintSize="376,1475" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                                                                          <Sequence DisplayName="Body Resume Rincian Aktivitas" sap:VirtualizedContainerService.HintSize="376,1576" sap2010:WorkflowViewState.IdRef="Sequence_42">
                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1530,13 +1531,14 @@
                                                                               </uix:NSelectItem.Target>
                                                                             </uix:NSelectItem>
                                                                             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_186" Text="Loading . . ." />
-                                                                            <uix:NHighlight Color="Green" ContinueOnError="True" DisplayName="Highlight 'No Aktivitas'" HighlightTime="1" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NHighlight_4" ScopeIdentifier="fea5aeae-4298-4099-a2bd-3a9cd0c60b64" Version="V1">
+                                                                            <uix:NHighlight Color="Green" ContinueOnError="True" DisplayName="Highlight 'No Aktivitas'" HighlightTime="1" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NHighlight_4" ScopeIdentifier="fea5aeae-4298-4099-a2bd-3a9cd0c60b64" Timeout="30" Version="V1">
                                                                               <uix:NHighlight.Target>
                                                                                 <uix:TargetAnchorable BrowserURL="https://fmis.bpkp.go.id/s2/hulusungaitengahkab/perencanaan-tahunan/renja-murni" DesignTimeRectangle="378, 575, 98, 37" ElementType="Text" FriendlyName="'10'" FullSelectorArgument="[String.Format(&quot;&lt;webctrl aria-role='grid' id='table-aktivitas' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tag='TD' colName='No' innertext='{0}' tableCol='3' /&gt;&quot;, pNum_Aktivitas)]" FuzzySelectorArgument="[String.Format(&quot;&lt;webctrl aria-role='grid' id='table-aktivitas' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tag='TD' type='' aaname='{0}' check:text='{0}' /&gt;&quot;, pNum_Aktivitas)]" Guid="055c926c-551f-4b15-8496-f6bf22f53bc2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGYAAAApCAYAAADH0VzbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEjSURBVHhe7duhasNQGIbh3MjuYGJ3sZnZqTG5mdiKEZPKikwX5iq6ykLh2KnawlpTPQqFksFgomQMvqYsItSXfqe8D/yQk8iXkxOT5OLyRozfJJvvrRi/IYzpJIIlwpgijCnCmCKMKcKYIowpwpgijCnCmCKMKcKYIowpwpiKN0y11kfoK+0Glc2tvWo+0MPtk66uU6XDharmfmwiDbNWeOlpMB0r77TDLPV631P4qi//PjXqZBqt/p/EJvJX2UxFO8zPu55b69UkUzFvFpE5rzCboLS1LkNOmNNgx5g6CLM/Y+7y+lz55Yw5rcMw9VfZ8k2PfJXhWAhjijCmCGOKMKYIY4owpghjijCmCGOKMKYIY4owpghjijCm+DnWdNgxlqQdjxjD0gTRhyYAAAAASUVORK5CYII=" InformativeScreenshot="82555d92542ddc8f536d3d31b7b200be.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SIMDA-NG | Pemerintah Kabupaten Hulu Sungai Tengah' /&gt;" SearchSteps="Selector" WaitForReadyArgument="Interactive" />
                                                                               </uix:NHighlight.Target>
                                                                             </uix:NHighlight>
                                                                             <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_212" Text="[&quot;Klik No Aktivitas = &quot; + pNum_Aktivitas.ToString]" />
-                                                                            <uix:NClick ClickType="Double" DelayBefore="3" DisplayName="Double-click 'No Aktivitas'" sap:VirtualizedContainerService.HintSize="334,193" sap2010:WorkflowViewState.IdRef="NClick_193" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fea5aeae-4298-4099-a2bd-3a9cd0c60b64" Timeout="60">
+                                                                            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_214" Text="Loading . . ." />
+                                                                            <uix:NClick ClickType="Double" DelayBefore="3" DisplayName="Double-click 'No Aktivitas'" sap:VirtualizedContainerService.HintSize="334,193" sap2010:WorkflowViewState.IdRef="NClick_193" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fea5aeae-4298-4099-a2bd-3a9cd0c60b64" Timeout="30">
                                                                               <uix:NClick.Target>
                                                                                 <uix:TargetAnchorable BrowserURL="https://fmis.bpkp.go.id/s2/hulusungaitengahkab/perencanaan-tahunan/renja-murni" DesignTimeRectangle="476, 575, 538, 37" ElementType="Text" FriendlyName="'# Fungsional Umum'" FullSelectorArgument="[String.Format(&quot;&lt;webctrl aria-role='grid' id='table-aktivitas' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tag='TD' innertext='{0}' tableCol='3' /&gt;&quot;, pNum_Aktivitas)]" FuzzySelectorArgument="&lt;webctrl aria-role='grid' id='table-aktivitas' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tag='TD' aaname='14' colName='No' parentid='table-aktivitas' type='' check:text='14' /&gt;" Guid="0f93074b-4977-4bbd-b2b7-75db7ac98ada" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAh4AAAApCAYAAAB6IyB2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQFSURBVHhe7drPaxNpAMbx/iP7H+zBW0/di4cuiIdFkB6khwXbHubSQqBBkBQKVZYGpEILUlhysB66VFgYUAIB3T0EodCKNCBd2BIoxBzSikpK4Nn3nXmnmYaYH7J90fj9wEMmb96ZSU7vw5sZ++HHn0UIIYQQ4iNjtcYnEUIIIYT4CMWDEEIIId4yJgAAAE8oHgAAwBuKBwAA8IbiAQAAvKF4AAAAbygeAADAG4oHAADwhuIBAAC8oXgAAABvKB4AAMAbigcAAPCG4gEAALyheAAAAG8oHon9DQXhsXsDAAAuw8DFo/rnmnbMupy8XmAW7Ss/zaayoT330eV4p/DuvAr/uLf/h27Fw/6u9V33xqiFCjKh6u4tAAAYzoDF40wvH2yaMpG8duhcoL9FFA8AAC5d/+JhF9sLuxkmnYtv1+JxrJ1Me+djb31Wq/v2yI7nlMtnNGGuNbGwrYNmNEXVUl5Tk+b613PKLs7H85uH2lkKNG7nzq2p6LrB3npOO7X4uL5b0Mx1+90CzfxeVr1lR3e1evu+covxuVO/leLv3DpW0d17/EZOhbdndnTo4lEPcwrutb9vIdxScMMcTwbKPnPXSV9z2HMBABhBg+14NJ5r9Y/D9msnu0DbQpIkWqx7FY87evTmxBx/0Mu8G2/+pZWbGyq/N8etExXvufE3m7q2vK296onq+6Ee/X1kBlPFo1nWyq32eeWH81p5ZcuEKR6T9xXWzHHrUE/m3PzGocqVd+bAeLulqaRYfEnxeBp/l9MXeVPGnqpqC8/7knJJMetVPPqdCwDACOpbPGxhuFAqTPou0JFexaM9bhfhaNwuzKlrnM83ZeKguKnsQkZX7Q5F5YP73BWJjvPai70pHqlF/Hz+x9cq3JmPdjzaJcn4guIR/x7jwrzUfdPXHPZcAABG0EA7Hj0fLLU6F+hI/JdKND+9g/G54tGxc5HMr79YUzaMdwdUKegXd5/zImF3CT6349GleNSfLWv6cUX2351mpc+OR3Vb08m1dWZ+/7ImHpSjcwctHtcexvOje1E8AADfuYGKR3m9x4OlVtfiYUtD8hxDRtnFTO/iYaSf8ZiZc0XF7lC45zTGf80P94xHl+KhRlmrc0E0d3ppWVNLJZ3aCd2Kh1EtrWk6uvasri5u6eBjPD5QeWhWVFiw9zLnmnux4wEA+N4N9oyHJ/V/j3RqS0PrSE/sbokrFgAAYDR8RcXjTNWi212YDBQ8fh39RQEAAEbHV7XjAQAARhvFAwAAeEPxAAAA3lA8AACANxQPAADgDcUDAAB4Q/EAAADeUDwAAIA3FA8AAOANxQMAAHhD8QAAAN5QPAAAgDcUDwAA4M1YrfFJhBBCCCE+wo4HAADwRPoPwrRIWnFgsq0AAAAASUVORK5CYII=" InformativeScreenshot="6cd3a261276d524f592786f4c67ae536.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SIMDA-NG | Pemerintah Kabupaten Hulu Sungai Tengah' /&gt;" SearchSteps="Selector" WaitForReadyArgument="Interactive" />
                                                                               </uix:NClick.Target>
