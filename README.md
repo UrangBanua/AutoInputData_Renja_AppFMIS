@@ -8,6 +8,11 @@ Automisasi Input Data Excel Renja ke Aplikasi FMIS
 - Buka cmd dan ketik "UiRobot.exe -f Main.xaml" untuk me running project.
 - Cek Loging data di folder "%LocalAppData%\UiPath\Logs\".
 
+**Review Hasil Running AutoInputData Renja di Aplikasi FMIS**
+- <img src="#1.png" width="420"/>
+- <img src="#2.png" width="420"/>
+- <img src="#3.png" width="420"/>
+
 **Tool Yang Diperlukan**
 - Download =>> https://download.uipath.com/UiPathStudioCommunity.msi
 - Install dan pilih "Standalone Options" 
