@@ -1,0 +1,12 @@
+﻿{
+  "Id": "s3efZ0MVU0mWvKdERkE9pw",
+  "Reference": "5TMnSvP_0kC60AKUP17Xtw/s3efZ0MVU0mWvKdERkE9pw",
+  "Name": "Chrome: SIMDA-NG | Pemerintah Kabupaten Hulu Sungai Tengah",
+  "Type": "App",
+  "Created": "2022-01-16T06:10:23.0972548Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=21.10.4.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2022-01-16T06:10:23.0972548Z"
+}
