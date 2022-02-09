@@ -15,7 +15,7 @@ Automisasi Input Data Excel Renja ke Aplikasi FMIS
 
 **Tool Yang Diperlukan**
 - Download =>> https://download.uipath.com/UiPathStudioCommunity.msi
-- Install dan pilih "Standalone Options" 
+- Install dan pilih "Next", kemudian pilih "Standalone Options"
 <img src="https://aws1.discourse-cdn.com/uipath/original/4X/b/a/a/baabc282d3daae392748c9ef99cdd4d95ad7ad5d.png" width="420"/>
 
 
