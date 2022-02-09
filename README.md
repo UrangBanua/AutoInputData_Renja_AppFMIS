@@ -13,9 +13,8 @@ Automisasi Input Data Excel Renja ke Aplikasi FMIS
 - <img src="https://github.com/UrangBanua/AutoInputData_Renja_AppFMIS/blob/master/.review/02.PNG?raw=true" width="600"/>
 - <img src="https://github.com/UrangBanua/AutoInputData_Renja_AppFMIS/blob/master/.review/03.PNG?raw=true" width="600"/>
 
-**Video Hasil Running AutoInputData Renja di Aplikasi FMIS**
-
-https://user-images.githubusercontent.com/58909061/153129403-2882a69c-fb20-4bc9-a5e3-2bec938ae0c8.mp4
+**Video Hasil Running Auto InputData Renja di Aplikasi FMIS**
+- https://youtu.be/5s0QhPL-FXs
 
 
 
