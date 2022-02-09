@@ -9,9 +9,9 @@ Automisasi Input Data Excel Renja ke Aplikasi FMIS
 - Cek Loging data di folder "%LocalAppData%\UiPath\Logs\".
 
 **Review Hasil Running AutoInputData Renja di Aplikasi FMIS**
-- <img src="https://github.com/afni18/AutoInputData_Renja_AppFMIS/blob/master/.screenshots/01.PNG?raw=true" width="600"/>
-- <img src="https://github.com/afni18/AutoInputData_Renja_AppFMIS/blob/master/.screenshots/02.PNG?raw=true" width="600"/>
-- <img src="https://github.com/afni18/AutoInputData_Renja_AppFMIS/blob/master/.screenshots/03.PNG?raw=true" width="600"/>
+- <img src="https://github.com/UrangBanua/AutoInputData_Renja_AppFMIS/blob/master/.review/01.PNG?raw=true" width="600"/>
+- <img src="https://github.com/UrangBanua/AutoInputData_Renja_AppFMIS/blob/master/.review/02.PNG?raw=true" width="600"/>
+- <img src="https://github.com/UrangBanua/AutoInputData_Renja_AppFMIS/blob/master/.review/03.PNG?raw=true" width="600"/>
 
 **Tool Yang Diperlukan**
 - Download =>> https://download.uipath.com/UiPathStudioCommunity.msi
