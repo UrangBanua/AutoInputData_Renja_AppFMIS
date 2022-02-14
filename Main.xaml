@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1210,39685" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1210,39786" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="80">
       <x:String>System.Activities</x:String>
@@ -101,7 +101,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="MULAI" sap:VirtualizedContainerService.HintSize="1220,39620" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence DisplayName="MULAI" sap:VirtualizedContainerService.HintSize="1220,39721" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="tblLogin" />
       <Variable x:TypeArguments="sd:DataTable" Name="tblData" />
@@ -115,7 +115,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch Proses Baca Data Excel" sap:VirtualizedContainerService.HintSize="1178,39528" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+    <TryCatch DisplayName="Try Catch Proses Baca Data Excel" sap:VirtualizedContainerService.HintSize="1178,39629" sap2010:WorkflowViewState.IdRef="TryCatch_6">
       <TryCatch.Try>
         <Sequence DisplayName="Sequence &quot;Baca Data Excel&quot;" sap:VirtualizedContainerService.HintSize="376,941" sap2010:WorkflowViewState.IdRef="Sequence_106">
           <sap:WorkflowViewStateService.ViewState>
@@ -157,15 +157,15 @@
         </Catch>
       </TryCatch.Catches>
       <TryCatch.Finally>
-        <Sequence DisplayName="Sequence Mulai" sap:VirtualizedContainerService.HintSize="1140,38177" sap2010:WorkflowViewState.IdRef="Sequence_135">
+        <Sequence DisplayName="Sequence Mulai" sap:VirtualizedContainerService.HintSize="1140,38278" sap2010:WorkflowViewState.IdRef="Sequence_135">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1098,38085" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1098,38186" sap2010:WorkflowViewState.IdRef="TryCatch_5">
             <TryCatch.Try>
-              <Sequence DisplayName="Mulai Proses" sap:VirtualizedContainerService.HintSize="1060,37207" sap2010:WorkflowViewState.IdRef="Sequence_133">
+              <Sequence DisplayName="Mulai Proses" sap:VirtualizedContainerService.HintSize="1060,37308" sap2010:WorkflowViewState.IdRef="Sequence_133">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -175,26 +175,26 @@
                 <WriteLine DisplayName="Write Line Data Login" sap:VirtualizedContainerService.HintSize="1018,61" sap2010:WorkflowViewState.IdRef="WriteLine_342" Text="[&quot;ParamLogin : &quot;+CStr(tblLogin.RowCount)]" />
                 <WriteLine DisplayName="Write Line Login Validasi" sap:VirtualizedContainerService.HintSize="1018,61" sap2010:WorkflowViewState.IdRef="WriteLine_343" Text="[&quot;Validasi Data Login: &quot;+CStr(tblData.RowCount)]" />
                 <ui:MessageBox ChosenButton="{x:Null}" AutoCloseAfter="00:00:03" Buttons="Ok" Caption="Cek Data Excel" DisplayName="Message Box &quot;Mulai&quot;" sap:VirtualizedContainerService.HintSize="1018,84" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;Data Terbaca - Total &quot;+CStr(tblData.RowCount)]" />
-                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tblLogin]" DisplayName="For Each Row in tblLogin" sap:VirtualizedContainerService.HintSize="1018,36688" sap2010:WorkflowViewState.IdRef="ForEachRow_8">
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tblLogin]" DisplayName="For Each Row in tblLogin" sap:VirtualizedContainerService.HintSize="1018,36789" sap2010:WorkflowViewState.IdRef="ForEachRow_8">
                   <ui:ForEachRow.Body>
                     <ActivityAction x:TypeArguments="sd:DataRow">
                       <ActivityAction.Argument>
                         <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentLogin" />
                       </ActivityAction.Argument>
-                      <Sequence DisplayName="Login Buka Browser" sap:VirtualizedContainerService.HintSize="984,36568" sap2010:WorkflowViewState.IdRef="Sequence_132">
+                      <Sequence DisplayName="Login Buka Browser" sap:VirtualizedContainerService.HintSize="984,36669" sap2010:WorkflowViewState.IdRef="Sequence_132">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="942,61" sap2010:WorkflowViewState.IdRef="WriteLine_344" Text="Sipakan Browser ke Alamat FMIS" />
-                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: SIMDA-NG | Pemerintah Kabupaten Hulu Sungai Tengah" sap:VirtualizedContainerService.HintSize="942,36375" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="fea5aeae-4298-4099-a2bd-3a9cd0c60b64" Version="V1">
+                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: SIMDA-NG | Pemerintah Kabupaten Hulu Sungai Tengah" sap:VirtualizedContainerService.HintSize="942,36476" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" ScopeGuid="fea5aeae-4298-4099-a2bd-3a9cd0c60b64" Version="V1">
                           <uix:NApplicationCard.Body>
                             <ActivityAction x:TypeArguments="x:Object">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Mulai Input Data Renja" sap:VirtualizedContainerService.HintSize="908,36159" sap2010:WorkflowViewState.IdRef="Sequence_131">
+                              <Sequence DisplayName="Mulai Input Data Renja" sap:VirtualizedContainerService.HintSize="908,36260" sap2010:WorkflowViewState.IdRef="Sequence_131">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:Int32" Default="0" Modifiers="Mapped" Name="pNo_Rinc" />
                                   <Variable x:TypeArguments="x:String" Name="pBeforeNo_Aktivitas">
@@ -382,13 +382,13 @@
                                     </uix:VerifyExecutionOptions>
                                   </uix:NClick.VerifyOptions>
                                 </uix:NClick>
-                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tblData]" DisplayName="For Each Row in tblData" sap:VirtualizedContainerService.HintSize="866,33077" sap2010:WorkflowViewState.IdRef="ForEachRow_7">
+                                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[tblData]" DisplayName="For Each Row in tblData" sap:VirtualizedContainerService.HintSize="866,33178" sap2010:WorkflowViewState.IdRef="ForEachRow_7">
                                   <ui:ForEachRow.Body>
                                     <ActivityAction x:TypeArguments="sd:DataRow">
                                       <ActivityAction.Argument>
                                         <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentData" />
                                       </ActivityAction.Argument>
-                                      <Sequence DisplayName="Proses Input Data" sap:VirtualizedContainerService.HintSize="832,32956" sap2010:WorkflowViewState.IdRef="Sequence_130">
+                                      <Sequence DisplayName="Proses Input Data" sap:VirtualizedContainerService.HintSize="832,33057" sap2010:WorkflowViewState.IdRef="Sequence_130">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="x:String" Default="[CurrentData(&quot;no_renja&quot;).ToString]" Modifiers="Mapped" Name="pNo_Renja" />
                                           <Variable x:TypeArguments="x:String" Default="[CurrentData(&quot;program&quot;).ToString]" Modifiers="Mapped" Name="pNama_Program" />
@@ -417,12 +417,12 @@
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:IfElseIf DisplayName="Else If Cek Job Status" sap:VirtualizedContainerService.HintSize="790,32428" sap2010:WorkflowViewState.IdRef="IfElseIf_29">
+                                        <ui:IfElseIf DisplayName="Else If Cek Job Status" sap:VirtualizedContainerService.HintSize="790,32529" sap2010:WorkflowViewState.IdRef="IfElseIf_29">
                                           <ui:IfElseIf.ConditionBlocks>
                                             <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                                               <ui:IfElseIfBlock BlockType="If" Condition="[CurrentData(&quot;job_status&quot;).ToString = &quot;&quot;]">
                                                 <ui:IfElseIfBlock.Then>
-                                                  <Sequence DisplayName="Body Belum di Input" sap:VirtualizedContainerService.HintSize="661,32050" sap2010:WorkflowViewState.IdRef="Sequence_128">
+                                                  <Sequence DisplayName="Body Belum di Input" sap:VirtualizedContainerService.HintSize="661,32151" sap2010:WorkflowViewState.IdRef="Sequence_128">
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1085,13 +1085,14 @@
                                                         </uix:TargetAnchorable>
                                                       </uix:NSelectItem.Target>
                                                     </uix:NSelectItem>
-                                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="619,61" sap2010:WorkflowViewState.IdRef="WriteLine_454" Text="[&quot;No Aktivitas = &quot; + pNum_Aktivitas]" />
+                                                    <WriteLine DisplayName="Write Line No Aktivitas Sebelumnya" sap:VirtualizedContainerService.HintSize="619,61" sap2010:WorkflowViewState.IdRef="WriteLine_454" Text="[&quot;No Aktivitas Sebelumnya = &quot; + pBeforeNo_Aktivitas.ToString]" />
+                                                    <WriteLine DisplayName="Write Line No Aktivitas Saat Ini" sap:VirtualizedContainerService.HintSize="619,61" sap2010:WorkflowViewState.IdRef="WriteLine_457" Text="[&quot;No Aktivitas Saat Ini = &quot; + pNum_Aktivitas.ToString]" />
                                                     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="619,61" sap2010:WorkflowViewState.IdRef="WriteLine_386" Text="Loading . . ." />
                                                     <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="619,61" sap2010:WorkflowViewState.IdRef="WriteLine_387" Text="[&quot;Cek Apakah Sudah Ada No Aktivitas = &quot; + pNum_Aktivitas]" />
                                                     <ui:IfElseIf DisplayName="Else If Cek Aktivitas Sudah Ada / Tidak" sap:VirtualizedContainerService.HintSize="619,675" sap2010:WorkflowViewState.IdRef="IfElseIf_25">
                                                       <ui:IfElseIf.ConditionBlocks>
                                                         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                                                          <ui:IfElseIfBlock BlockType="If" Condition="[pJob_Resume = &quot;YA&quot; AND CurrentData(&quot;no_rinc&quot;).ToString = pBeforeNo_Aktivitas.ToString]">
+                                                          <ui:IfElseIfBlock BlockType="If" Condition="[pJob_Resume = &quot;YA&quot; AND pNum_Aktivitas.ToString = pBeforeNo_Aktivitas.ToString]">
                                                             <ui:IfElseIfBlock.Then>
                                                               <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,298" sap2010:WorkflowViewState.IdRef="Sequence_113">
                                                                 <sap:WorkflowViewStateService.ViewState>
@@ -1136,7 +1137,7 @@
                                                     <ui:IfElseIf DisplayName="Else If Proses Tahap 2 Buat Aktivitas Baru" sap:VirtualizedContainerService.HintSize="619,8265" sap2010:WorkflowViewState.IdRef="IfElseIf_27">
                                                       <ui:IfElseIf.ConditionBlocks>
                                                         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                                                          <ui:IfElseIfBlock BlockType="If" Condition="[CurrentData(&quot;no_rinc&quot;).ToString &lt;&gt; pBeforeNo_Aktivitas.ToString AND pCek_Aktivitas.ToString = &quot;0&quot;]">
+                                                          <ui:IfElseIfBlock BlockType="If" Condition="[pNum_Aktivitas.ToString &lt;&gt; pBeforeNo_Aktivitas.ToString AND pCek_Aktivitas.ToString = &quot;0&quot;]">
                                                             <ui:IfElseIfBlock.Then>
                                                               <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="418,5743" sap2010:WorkflowViewState.IdRef="Sequence_116">
                                                                 <sap:WorkflowViewStateService.ViewState>
@@ -1509,7 +1510,7 @@
                                                                 <ui:IfElseIf DisplayName="Else If Resume Job Rincian Aktivitas Sama" sap:VirtualizedContainerService.HintSize="451,1770" sap2010:WorkflowViewState.IdRef="IfElseIf_26">
                                                                   <ui:IfElseIf.ConditionBlocks>
                                                                     <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                                                                      <ui:IfElseIfBlock BlockType="If" Condition="[pJob_Resume = &quot;YA&quot; AND (CurrentData(&quot;no_rinc&quot;).ToString = pBeforeNo_Aktivitas.ToString OR pCek_Aktivitas.ToString &lt;&gt; &quot;0&quot;)]">
+                                                                      <ui:IfElseIfBlock BlockType="If" Condition="[pJob_Resume = &quot;YA&quot; AND (pNum_Aktivitas.ToString = pBeforeNo_Aktivitas.ToString OR pCek_Aktivitas.ToString &lt;&gt; &quot;0&quot;)]">
                                                                         <ui:IfElseIfBlock.Then>
                                                                           <Sequence DisplayName="Body Resume Rincian Aktivitas" sap:VirtualizedContainerService.HintSize="376,1576" sap2010:WorkflowViewState.IdRef="Sequence_117">
                                                                             <sap:WorkflowViewStateService.ViewState>
