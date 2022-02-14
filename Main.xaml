@@ -1092,7 +1092,7 @@
                                                     <ui:IfElseIf DisplayName="Else If Cek Aktivitas Sudah Ada / Tidak" sap:VirtualizedContainerService.HintSize="619,675" sap2010:WorkflowViewState.IdRef="IfElseIf_25">
                                                       <ui:IfElseIf.ConditionBlocks>
                                                         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
-                                                          <ui:IfElseIfBlock BlockType="If" Condition="[pJob_Resume = &quot;YA&quot; AND pNum_Aktivitas.ToString = pBeforeNo_Aktivitas.ToString]">
+                                                          <ui:IfElseIfBlock BlockType="If" Condition="[pJob_Resume = &quot;YA&quot; AND pNum_Aktivitas.ToString &lt;&gt; pBeforeNo_Aktivitas.ToString]">
                                                             <ui:IfElseIfBlock.Then>
                                                               <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,298" sap2010:WorkflowViewState.IdRef="Sequence_113">
                                                                 <sap:WorkflowViewStateService.ViewState>
