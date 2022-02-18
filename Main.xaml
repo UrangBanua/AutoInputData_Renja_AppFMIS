@@ -1343,7 +1343,7 @@
                                                         </sc:BindingList>
                                                       </ui:IfElseIf.ConditionBlocks>
                                                     </ui:IfElseIf>
-                                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="805,61" sap2010:WorkflowViewState.IdRef="WriteLine_388" Text="[IF(pCek_Aktivitas.ToString = &quot;0&quot;, &quot;Aktivitas Tdk Ditemukan&quot;, &quot;Aktivitas Ditemukan Dengan No = &quot; + pCek_Aktivitas.ToString)]" />
+                                                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="805,61" sap2010:WorkflowViewState.IdRef="WriteLine_388" Text="[IF(pCek_Aktivitas.ToString = &quot;0&quot;, &quot;Aktivitas Baru Diperlukan&quot;, &quot;Aktivitas Sudah Ada Dengan No = &quot; + pCek_Aktivitas.ToString)]" />
                                                     <ui:IfElseIf DisplayName="Else If Proses Tahap 2 Buat Aktivitas Baru" sap:VirtualizedContainerService.HintSize="805,8265" sap2010:WorkflowViewState.IdRef="IfElseIf_27">
                                                       <ui:IfElseIf.ConditionBlocks>
                                                         <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
