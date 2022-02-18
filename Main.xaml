@@ -107,7 +107,11 @@
       <Variable x:TypeArguments="sd:DataTable" Name="tblData" />
       <Variable x:TypeArguments="x:String" Default="YA" Modifiers="Mapped" Name="pJob_Resume" />
       <Variable x:TypeArguments="x:String" Default="[&quot;ParamInput&quot;+&quot;.xlsx&quot;]" Modifiers="Mapped" Name="pFile_SKPD" />
-      <Variable x:TypeArguments="x:Int32" Default="2" Modifiers="Mapped" Name="pJob_Data" />
+      <Variable x:TypeArguments="x:Int32" Modifiers="Mapped" Name="pJob_Data">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" Value="2" />
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="x:String" Modifiers="Mapped" Name="pSheetSKPD" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
@@ -196,12 +200,12 @@
                               </ActivityAction.Argument>
                               <Sequence DisplayName="Mulai Input Data Renja" sap:VirtualizedContainerService.HintSize="908,36260" sap2010:WorkflowViewState.IdRef="Sequence_131">
                                 <Sequence.Variables>
-                                  <Variable x:TypeArguments="x:Int32" Default="0" Modifiers="Mapped" Name="pNo_Rinc" />
-                                  <Variable x:TypeArguments="x:String" Name="pBeforeNo_Aktivitas">
+                                  <Variable x:TypeArguments="x:Int32" Modifiers="Mapped" Name="pNo_Rinc">
                                     <Variable.Default>
-                                      <Literal x:TypeArguments="x:String">0</Literal>
+                                      <Literal x:TypeArguments="x:Int32" />
                                     </Variable.Default>
                                   </Variable>
+                                  <Variable x:TypeArguments="x:String" Default="0" Name="pBeforeNo_Aktivitas" />
                                 </Sequence.Variables>
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -1299,7 +1303,7 @@
                                                                   <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_395" Text="Loading . . ." />
                                                                   <uix:NClick ClickType="Single" DelayBefore="2" DisplayName="Click 'Sumber Dana'" sap:VirtualizedContainerService.HintSize="334,193" sap2010:WorkflowViewState.IdRef="NClick_267" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="fea5aeae-4298-4099-a2bd-3a9cd0c60b64" Timeout="60">
                                                                     <uix:NClick.Target>
-                                                                      <uix:TargetAnchorable BrowserURL="https://fmis.bpkp.go.id/s2/hulusungaitengahkab/perencanaan-tahunan/renja-murni" DesignTimeRectangle="1018, 344, 10, 10" FriendlyName="'I'" FullSelectorArgument="[String.Format(&quot;&lt;webctrl aria-role='grid' id='table-pilih-sumberdana' tag='TABLE' aaname='No Sub Kegiatan' /&gt;&lt;webctrl isleaf='1' tableCol='2' tag='TD' aaname='{0}' colName='Sub Kegiatan' /&gt;&lt;nav up='2' /&gt;&lt;webctrl parentid='table-pilih-sumberdana' tag='I' class='fas fa-forward' tableCol='3' idx='1' /&gt;&quot;, pSumber_Dana)]" FuzzySelectorArgument="&lt;webctrl parentid='table-pilih-sumberdana' tag='I' type='' aaname='' /&gt;" Guid="0c4be9b6-a475-403c-8312-1a9ef7b31d34" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACZSURBVDhPxY+xCoMwEIZ9/1coFJwqiA4dCuIbpHZRCpEOFhFEkIp2FX7Ty9CrnotD/eCGfOHjEgcb2SscX7hfn+hGOlkkx7BhncM7KRzOGuWbjOwYv+Fn/Axpa9ZIjrEMaW6IlV66/Lt6JTQTJDjO3aXAQMFK6EYFukpw7LWzMEGoGtC95Bg2bB7wPfMH3dORkBzDhhv4dwhM6xzeolNRsbsAAAAASUVORK5CYII=" InformativeScreenshot="ddf0554ea5592469eb5abf6d8839e764.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SIMDA-NG | Pemerintah Kabupaten Hulu Sungai Tengah' /&gt;" SearchSteps="Selector" WaitForReadyArgument="Interactive" />
+                                                                      <uix:TargetAnchorable BrowserURL="https://fmis.bpkp.go.id/s2/hulusungaitengahkab/perencanaan-tahunan/renja-murni" DesignTimeRectangle="1413, 368, 12, 12" FriendlyName="'I'" FullSelectorArgument="&lt;webctrl aria-role='grid' id='table-pilih-sumberdana' tag='TABLE' aaname='No Sub Kegiatan' /&gt;&lt;webctrl isleaf='1' tableCol='2' tag='TD' aaname='*' colName='Sub Kegiatan' tableRow='2' /&gt;&lt;nav up='2' /&gt;&lt;webctrl parentid='table-pilih-sumberdana' tag='I' class='fas fa-forward' tableCol='3' idx='1' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='table-pilih-sumberdana' tag='I' type='' aaname='' /&gt;" Guid="0c4be9b6-a475-403c-8312-1a9ef7b31d34" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACZSURBVDhPxY+xCoMwEIZ9/1coFJwqiA4dCuIbpHZRCpEOFhFEkIp2FX7Ty9CrnotD/eCGfOHjEgcb2SscX7hfn+hGOlkkx7BhncM7KRzOGuWbjOwYv+Fn/Axpa9ZIjrEMaW6IlV66/Lt6JTQTJDjO3aXAQMFK6EYFukpw7LWzMEGoGtC95Bg2bB7wPfMH3dORkBzDhhv4dwhM6xzeolNRsbsAAAAASUVORK5CYII=" InformativeScreenshot="4ceb01fd5ae0bca5ab198ae6d7991fed.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SIMDA-NG | Pemerintah Kabupaten Hulu Sungai Tengah' /&gt;" SearchSteps="Selector" WaitForReadyArgument="Interactive" />
                                                                     </uix:NClick.Target>
                                                                     <uix:NClick.VerifyOptions>
                                                                       <uix:VerifyExecutionOptions DisplayName="Input 'Sumber Dana 1'" Mode="Appears" Retry="True">
