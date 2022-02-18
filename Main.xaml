@@ -2347,7 +2347,7 @@
                                                                       </Sequence>
                                                                     </If.Else>
                                                                   </If>
-                                                                  <WriteLine DisplayName="Write Line Harag Satuan x Volume" sap:VirtualizedContainerService.HintSize="484,61" sap2010:WorkflowViewState.IdRef="WriteLine_439" Text="[&quot;Harga Satuan (Rp. &quot; + CurrentData(&quot;harga_rp&quot;).ToString + &quot;) x TotalVolume (&quot; + CurrentData(&quot;volume&quot;).ToString + &quot;)&quot;]" />
+                                                                  <WriteLine DisplayName="Write Line Harag Satuan x Volume" sap:VirtualizedContainerService.HintSize="484,61" sap2010:WorkflowViewState.IdRef="WriteLine_439" Text="[&quot;TotalVolume x HargaSatuan = &quot; + CurrentData(&quot;volume&quot;).ToString + &quot; x &quot; + CurrentData(&quot;harga_rp&quot;).ToString]" />
                                                                   <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="484,61" sap2010:WorkflowViewState.IdRef="WriteLine_503" Text="[&quot;Highlight Total Harga = Rp. &quot; + CurrentData(&quot;total_harga_rp&quot;).ToString]" />
                                                                   <uix:NHighlight Color="Gold" DisplayName="Highlight 'Total Harga'" HighlightTime="5" sap:VirtualizedContainerService.HintSize="484,156" sap2010:WorkflowViewState.IdRef="NHighlight_10" ScopeIdentifier="fea5aeae-4298-4099-a2bd-3a9cd0c60b64" Timeout="60" Version="V1">
                                                                     <uix:NHighlight.Target>
